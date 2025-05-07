@@ -1,0 +1,36 @@
+#home-section {
+  position: relative;
+}
+
+#home-section .backgrounds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#home-section .backgrounds > div {
+  content: '';
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffbd3a;
+  top: calc(50% - 250px);
+  left: -250px;
+  filter: blur(179px);
+  opacity: 0.5;
+}
+
+#home-section .backgrounds > div:first-of-type {
+  left: calc(50% - 428px);
+  top: -327px;
+}
+
+#home-section .backgrounds > div:last-of-type {
+  background-color: #8caad5;
+  top: calc(50% - 250px);
+  right: -326px;
+  left: auto;
+}
